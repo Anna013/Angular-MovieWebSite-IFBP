@@ -9,8 +9,13 @@ import { Guard } from './guard/guard';
 import { TokenInterceptor } from './services/token.interceptor';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
-import { HomeComponent } from './home/home/home.component';
 import { AdminGuard } from './guard/adminGuard';
+import { MovieService } from './services/movie.service';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { MovieListComponent } from './event/movie-list/movie-list.component';
+import { AddMovieComponent } from './event/add-movie/add-movie.component';
+import { MovieItemComponent } from './event/movie-item/movie-item.component';
+
 
 
 @NgModule({
@@ -18,7 +23,9 @@ import { AdminGuard } from './guard/adminGuard';
     AppComponent,
     UserLoginComponent,
     UserRegisterComponent,
-    HomeComponent,
+    MovieListComponent,
+    AddMovieComponent,
+    MovieItemComponent,
     
 
   ],
@@ -26,9 +33,12 @@ import { AdminGuard } from './guard/adminGuard';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule,
+   
+   
   ],
-  providers: [{provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi:true}, Guard, AdminGuard],
+  providers: [MovieService, {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi:true}, Guard, AdminGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
