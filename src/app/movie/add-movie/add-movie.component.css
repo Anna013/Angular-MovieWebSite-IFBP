@@ -1,12 +1,15 @@
 html,body{
-    background-image: url('https://www.teahub.io/photos/full/135-1351429_wallpaper-earth-planet-4k-8k-space-8k-earth.jpg');
+    /* background-image: url('https://wallpapercave.com/wp/wp2681770.jpg'); */
+    /* background-image: url('https://img2.wallspic.com/crops/8/5/6/0/80658/80658-darkness-euclidean_vector-light-tourism-blue-2560x1600.jpg');
+    */
+     background-image: url('https://wallpaper.dog/large/20493501.jpg');
     background-size: cover, contain;
-    background-repeat: no-repeat;
-    height: 100%;
+background-repeat: no-repeat;
     font-family: 'Numans', sans-serif;
+    
  }
  .image{
-    background-image: url('https://t3.ftcdn.net/jpg/02/24/44/70/360_F_224447009_zSRwNZa8kd8pywa6YSaVmMecWayHF1j5.jpg');
+    background-image: url('https://wallpaperaccess.com/full/2314950.jpg');
 }
 
 .create {
@@ -28,6 +31,7 @@ html,body{
     border-style: ridge;
     border-radius: 25px;
     border-width: thin;
+    background-color: rgba(0,0,0, 0.4)
 }
 .btn {        
     font-size: 15px;
@@ -70,11 +74,12 @@ html,body{
     text-align: left;
     margin-left: 5px;
     color: black;
+    
   }
-  
 
-
-
+  .aa{
+    background-color: rgba(0,0,0, 0.1)
+  }
 
 
 

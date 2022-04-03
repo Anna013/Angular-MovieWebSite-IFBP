@@ -12,7 +12,7 @@ import { MovieService } from 'src/app/services/movie.service';
 })
 export class AddMovieComponent {
 
-  ganres = ["astronomy", "basdasd", "csad", "dasd", "easdasdasd", "f", "g"];
+  ganres = ["action", "basdasd", "csad", "dasd", "easdasdasd", "f", "g"];
   ganres2 = [];
   mess;
 

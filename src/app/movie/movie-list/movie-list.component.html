@@ -30,7 +30,7 @@
                                 routerLinkActive="active">Register</a></span>
                         <span><a style="color: white" class="nav-link" routerLink="/login"
                                 routerLinkActive="active">Login</a></span>
-                        <a style="color: white" class="nav-link active" aria-current="page" href="#bottom">Contact</a>
+                        <a style="color: white" class="nav-link active" aria-current="page" href="event/list/#bottom">Contact</a>
                         <button *ngIf = "check.isUser()"class="button btn-primary btn-dark" (click)= "check.logoutUser()" >User logout</button>
                         <button  *ngIf="check.isAdmin()" type="button" class="button btn-primary btn-dark" (click)= "check.logoutAdmin()"> Admin logout</button>
                     </nav>

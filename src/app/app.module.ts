@@ -12,9 +12,9 @@ import { UserRegisterComponent } from './user/user-register/user-register.compon
 import { AdminGuard } from './guard/adminGuard';
 import { MovieService } from './services/movie.service';
 import {NgxPaginationModule} from 'ngx-pagination';
-import { MovieListComponent } from './event/movie-list/movie-list.component';
-import { AddMovieComponent } from './event/add-movie/add-movie.component';
-import { MovieItemComponent } from './event/movie-item/movie-item.component';
+import { MovieListComponent } from './movie/movie-list/movie-list.component';
+import { AddMovieComponent } from './movie/add-movie/add-movie.component';
+import { MovieItemComponent } from './movie/movie-item/movie-item.component';
 
 
 

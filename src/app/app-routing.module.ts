@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddMovieComponent } from './event/add-movie/add-movie.component';
-import { MovieListComponent } from './event/movie-list/movie-list.component';
+import { AddMovieComponent } from './movie/add-movie/add-movie.component';
+import { MovieListComponent } from './movie/movie-list/movie-list.component';
 import { AdminGuard } from './guard/adminGuard';
 import { Guard } from './guard/guard';
 import { UserLoginComponent } from './user/user-login/user-login.component';
