@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -14,7 +16,9 @@ import {NgxPaginationModule} from 'ngx-pagination';
   declarations: [
     AppComponent,
     UserLoginComponent,
-    UserRegisterComponent
+    UserRegisterComponent,
+    NavbarComponent,
+    FooterComponent
 
   ],
   imports: [

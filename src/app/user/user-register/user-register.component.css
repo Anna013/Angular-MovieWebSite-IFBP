@@ -6,7 +6,6 @@
 	  
 }
 
-
 .register-form form {
     margin-bottom: 15px;
     background: #c8dbec;
@@ -35,22 +34,6 @@ font-family: 'Numans', sans-serif;
 }
 
 
-
-.image{
-    background-image: url('https://wallpaperaccess.com/full/2314950.jpg');
-}
 .button{
     margin-right: 1em;
-}
-.navbar{
-    border-style: ridge;
-    border-radius: 25px;
-    border-width: thin;
-    background-color: rgba(0,0,0, 0.3);
-}
-
-.logoutButton{
-    border-radius: 25px;
-    background-color: rgba(0,0,0, 0.3);
-    color: white;
 }

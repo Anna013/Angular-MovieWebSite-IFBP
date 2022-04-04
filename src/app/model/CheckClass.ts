@@ -3,7 +3,6 @@ import { Injectable } from "@angular/core";
 @Injectable({
   providedIn: 'root'
 })
-
 export class CheckClass {
 
    isAdmin(){
@@ -13,10 +12,8 @@ export class CheckClass {
     return false;
   }
   isUser() {
-    if (localStorage.getItem('token')){
-      console.log("ANAAAA")
+    if (localStorage.getItem('token'))
       return true;
-    }
     return false;
   }
 

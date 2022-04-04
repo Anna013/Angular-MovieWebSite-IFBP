@@ -16,12 +16,6 @@
 .button{
     margin-right: 1em;
 }
-.navbar{
-    border-style: ridge;
-    border-radius: 25px;
-    border-width: thin;
-    background-color: rgba(0,0,0, 0.3);
-}
 
 
 .login-form h2 {
@@ -41,14 +35,4 @@ background-size: cover, contain;
 background-repeat: no-repeat;
 height: 100%;
 font-family: 'Numans', sans-serif;
-}
-
-
-.image{
-    background-image: url('https://wallpaperaccess.com/full/2314950.jpg');
-}
-.logoutButton{
-    border-radius: 25px;
-    background-color: rgba(0,0,0, 0.3);
-    color: white;
 }
