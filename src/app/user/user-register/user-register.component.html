@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,8 +36,8 @@
 <body class="d-flex h-100 text-center text-white bg-dark">
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-       <app-navbar></app-navbar>
-       
+        <app-navbar></app-navbar>
+
         <div class="text-center">
             <div class="container-sm">
                 <main class="px-3">
@@ -49,31 +48,39 @@
             </div>
         </div>
 
-        <div class="register-form">       
+        <div class="register-form">
             <form #registrationForm="ngForm" (ngSubmit)="register()">
                 <h2 class="text-center" style="color: rgb(46, 60, 99)">Register</h2>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Username" 
-                    #Username="ngModel" required name="username" [(ngModel)]="username" [class.is-invalid]="Username.invalid && Username.touched">
-                   
+                    <input type="text" class="form-control" placeholder="Username" #Username="ngModel" required
+                        name="username" [(ngModel)]="username"
+                        [class.is-invalid]="Username.invalid && Username.touched">
+
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" 
-                    #Password="ngModel" required name="password" [(ngModel)]="password" [class.is-invalid]="Password.invalid && Password.touched">
-                
+                    <input type="password" class="form-control" placeholder="Password" #Password="ngModel" required
+                        name="password" [(ngModel)]="password"
+                        [class.is-invalid]="Password.invalid && Password.touched">
+
                 </div>
-                    <button [disabled]="registrationForm.form.invalid" type="submit" class="btn btn-primary btn-block">register</button>
-                    <small class="text-danger">{{msg}}</small>
-                    <br>
-                    <div class="form-group">
-                        <h6 class="text-center"><a style="color: rgb(0, 0, 0)" routerLink="/login" routerLinkActive="active">Already have acount?</a></h6>
-                    </div>
+                <div class="form-group">
+                    <button [disabled]="registrationForm.form.invalid" type="submit"
+                        class="btn btn-primary btn-block">register</button>
+                </div>
+
+                <small class="text-danger">{{msg}}</small>
+                
+                <div class="form-group">
+                    <h6 class="text-center"><a style="color: rgb(0, 0, 0)" routerLink="/login"
+                            routerLinkActive="active">Already have acount?</a></h6>
+                </div>
             </form>
-           
+
         </div>
 
-      <app-footer></app-footer>
+        <app-footer></app-footer>
     </div>
 </body>
 <div id="bottom"></div>
+
 </html>
