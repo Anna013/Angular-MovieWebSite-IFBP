@@ -21,7 +21,7 @@ export class UserLoginComponent implements OnInit {
 
   login() {
 
-    if (this.username == "admin" && this.password == "adminastronomy") {
+    if (!this.check.isAdmin() && this.username == "admin" && this.password == "adminifbp") {
       this.userService.loginAdmin(this.username, this.password).subscribe(resp => {
         localStorage.setItem("tokenAdmin", resp.token)
         this.router.navigate(['/event/list']);
@@ -29,13 +29,16 @@ export class UserLoginComponent implements OnInit {
         error => { console.log("login error"); this.msg = "Plase enter valid username or password"; });
 
     }
-    else {
+    else if(!this.check.isUser()){
       this.userService.login(this.username, this.password).subscribe(resp => {
         localStorage.setItem("token", resp.token)
         this.router.navigate(['/event/list']);
       },
         error => { console.log("login error"); this.msg = "Plase enter valid username or password"; });
     }
+    else
+      this.msg = "You are already logged in."
+    
   }
 
 

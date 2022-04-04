@@ -20,11 +20,14 @@ export class UserRegisterComponent implements OnInit {
   }
 
   register() {
+    if(!this.check.isUser())
     this.userService.register(this.username, this.password).subscribe(data =>{
       console.log("userlogin");
       this.router.navigate(['/login']);
     },
     error => {console.log("Regitration error"); this.msg = "User alredy exist."; })
+    else
+      this.msg = "You need to logout to be able to create new account."
   }
 
 
