@@ -13,8 +13,10 @@ export class CheckClass {
     return false;
   }
   isUser() {
-    if (localStorage.getItem('token'))
+    if (localStorage.getItem('token')){
+      console.log("ANAAAA")
       return true;
+    }
     return false;
   }
 

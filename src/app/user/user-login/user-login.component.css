@@ -47,3 +47,8 @@ font-family: 'Numans', sans-serif;
 .image{
     background-image: url('https://wallpaperaccess.com/full/2314950.jpg');
 }
+.logoutButton{
+    border-radius: 25px;
+    background-color: rgba(0,0,0, 0.3);
+    color: white;
+}

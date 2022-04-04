@@ -45,8 +45,8 @@
                         <span><a style="color: white" class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></span>
                         <span><a style="color: white" class="nav-link" routerLink="/register" routerLinkActive="active">Register</a></span>
                         <a style="color: white" class="nav-link active" aria-current="page" href="register/#bottom">Contact</a>
-                        <button *ngIf = "check.isUser()"class="button btn-primary btn-dark" (click)= "check.logoutUser()" >User logout</button>
-                        <button  *ngIf="check.isAdmin()" type="button" class="button btn-primary btn-dark" (click)= "check.logoutAdmin()"> Admin logout</button>
+                        <button *ngIf = "check.isUser()"class="logoutButton" (click)= "check.logoutUser()" >User logout</button>
+                        <button  *ngIf="check.isAdmin()" type="button" class="logoutButton" (click)= "check.logoutAdmin()"> Admin logout</button>
                     </nav>
                 </div>
             </div>
@@ -76,9 +76,12 @@
                 </div>
                     <button [disabled]="registrationForm.form.invalid" type="submit" class="btn btn-primary btn-block">register</button>
                     <small class="text-danger">{{msg}}</small>
+                    <br>
+                    <div class="form-group">
+                        <h6 class="text-center"><a style="color: rgb(0, 0, 0)" routerLink="/login" routerLinkActive="active">Already have acount?</a></h6>
+                    </div>
             </form>
-            <h6 class="text-center" style="color: white">Already have acount?</h6>
-            <h6 class="text-center"><a style="color: white" routerLink="/login" routerLinkActive="active">login</a></h6>
+           
         </div>
 
         <footer class="mt-auto text-white-50">
